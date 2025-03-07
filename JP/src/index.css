@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vina+Sans&display=swap');
+
+body {
+  background-color: #f6f6e5;
+  margin: 0 auto;
+}
+
+@layer base {
+  h1 {
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 3.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #f9b349;
+    text-shadow: 3px 4px 0 black;
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    color: #196146;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #5f8976;
+  }
+
+
+  nav {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #196146;
+  }
+}
