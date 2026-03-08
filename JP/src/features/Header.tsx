@@ -1,6 +1,13 @@
 import React from 'react'
 
-export const Header = () => {
+type HeaderProps = {
+  onPresentation: () => void
+  onServices: () => void
+  onSetlist: () => void
+  onContact: () => void
+}
+
+export const Header = ({ onPresentation, onServices, onSetlist, onContact }: HeaderProps) => {
     return (
       <div className="w-full h-[100vh] bg-cover bg-center bg-no-repeat m-0 relative" style={{ backgroundImage: "url('/header_bg.png')" }}>
         <img src="/header_menu.png" alt="header menu" className="hidden sm:block absolute bottom-0 left-1/2 z-0" style={{ width: '2000px', maxWidth: 'none', transform: 'translateX(-50%)' }} />
@@ -19,12 +26,12 @@ export const Header = () => {
             />
           </div>
           <nav className="relative z-10 flex flex-col md:flex-row lg:flex-row justify-between items-center gap-y-4 p-4 px-8 mt-12 w-full">
-            <a href="#home" className="font-semibold hover:text-secondary">Presentation</a>
-            <a href="#services" className="font-semibold hover:text-secondary">Live/Photos</a>
-            <a href="#about" className="font-semibold hover:text-secondary">Setlist</a>
-            <a href="#contact" className="font-semibold hover:text-secondary">Contact</a>
+            <button type="button" onClick={onPresentation} className="font-semibold hover:text-secondary bg-transparent border-0 cursor-pointer p-0">Presentation</button>
+            <button type="button" onClick={onServices} className="font-semibold hover:text-secondary bg-transparent border-0 cursor-pointer p-0">Live/Photos</button>
+            <button type="button" onClick={onSetlist} className="font-semibold hover:text-secondary bg-transparent border-0 cursor-pointer p-0">Setlist</button>
+            <button type="button" onClick={onContact} className="font-semibold hover:text-secondary bg-transparent border-0 cursor-pointer p-0">Contact</button>
           </nav>
         </div>
       </div>
     );
-  }
+}
