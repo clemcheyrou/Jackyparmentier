@@ -4,12 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vina+Sans&display=swap');
 
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   background-color: #f6f6e5;
-  margin: 0 auto;
 }
 
 @layer base {
+  h1, h2 {
+    margin: 0;
+  }
   h1 {
     font-family: 'Vina Sans', sans-serif;
     font-size: 3.25rem;
@@ -36,7 +45,7 @@ body {
 
   nav {
     font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;

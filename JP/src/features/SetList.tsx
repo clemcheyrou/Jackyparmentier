@@ -9,12 +9,13 @@ export const SetList = () => {
     ];
 
     return (
-      <div className="h-[100vh] flex flex-col py-4">
-        <div className="flex-1 p-6">
+      <div className="w-full h-[100vh] bg-cover bg-center bg-no-repeat m-0 relative" style={{ backgroundImage: "url('/setlist_bg.png')" }}>
+      <div className="min-h-[100vh] w-[800px] max-w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-24 pt-32">
+      <div className="flex-1 p-6">
           <img
-            src="/image1.jpg"
+            src="/setlist_img.png"
             alt="img1"
-            className="w-full h-full object-cover border"
+            className="w-full h-full object-cover"
           />
         </div>
   
@@ -27,6 +28,7 @@ export const SetList = () => {
                 ))}
             </div>
         </div>
+      </div>
       </div>
     );
 }

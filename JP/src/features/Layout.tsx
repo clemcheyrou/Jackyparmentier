@@ -7,12 +7,12 @@ import { Contact } from './Contact'
 
 export const Layout = () => {
   return (
-    <div className='md:mx-48 lg:mx-96 mx-4 mt-20'>
-        <Header/>
+    <>
+        <Header />
+        <AboutUs/>
         <Image/>
         <SetList/>
-        <AboutUs/>
         <Contact/>
-    </div>
+      </>
   )
 }

@@ -4,17 +4,18 @@ import { FaFacebook } from "react-icons/fa";
 export const Contact = () => {
 
     return (
-        <div className="h-[100vh] flex flex-col py-4">
-            <div className="flex-1 p-6">
+        <div className="w-full h-[100vh] bg-cover bg-center bg-no-repeat m-0 relative" style={{ backgroundImage: "url('/contact_bg.png')" }}>
+      <div className="min-h-[100vh] w-[800px] max-w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-24 pt-32">
+      <div className="flex-1 p-6">
                 <img
-                    src="/img1.jpg"
+                    src="/contact_img.png"
                     alt="img1"
-                    className="w-full h-full object-cover border"
+                    className="w-full h-full object-cover"
                 />
             </div>
 
             <div className="flex-1 p-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Nous avons déjà participé à tous types d'évènements: fêtes de village, festivals de fanfare, beaujolais, carnavals, mariages, marches engagées, embellissements d'autoroute, tournées de bars et ce dans de nombreux coins d'Europe et de Navarre!</p>
                 <div className="mt-28 text-center">
                     <p>jackyparmentier@gmail.com</p>
                     <p>06 28 05 69 07</p>
@@ -24,6 +25,7 @@ export const Contact = () => {
                     <FaSquareInstagram />
                 </div>
             </div>
+        </div>
         </div>
     );
 }
